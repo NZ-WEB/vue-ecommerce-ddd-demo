@@ -1,8 +1,8 @@
 module.exports = {
   root: true,
-  parser: "vue-eslint-parser",
+  parser: 'vue-eslint-parser',
   parserOptions: {
-    parser: "@typescript-eslint/parser",
+    parser: '@typescript-eslint/parser',
   },
   plugins: ['@typescript-eslint'],
   extends: [
@@ -11,4 +11,7 @@ module.exports = {
     'plugin:vue/vue3-recommended',
     'prettier',
   ],
+  rules: {
+    '@typescript-eslint/no-explicit-any': 'off'
+  }
 };
