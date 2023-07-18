@@ -1,4 +1,4 @@
-import { Http } from '@/domain/repositories/HTTP';
+import { Http } from '@/domain/repositories/HTTP.ts';
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
 import ky, { Options } from 'ky-universal';

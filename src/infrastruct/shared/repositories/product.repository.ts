@@ -1,6 +1,6 @@
-import { Http } from '@/domain/repositories/HTTP';
-import { ProductRepository } from '@/domain/repositories/product.repository';
-import { ProductDTO } from '@/infrastruct/dto/product.dto';
+import { Http } from '@/domain/repositories/HTTP.ts';
+import { ProductRepository } from '@/domain/repositories/product.repository.ts';
+import { ProductDTO } from '@/infrastruct/shared/http/dto/product.dto.ts';
 
 export const productRepository = (client: Http): ProductRepository => ({
   async getAll(): Promise<ProductDTO[]> {

@@ -1,7 +1,10 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import AppContainer from '@/infrastruct/shared/ui/AppContainer.vue';
+import { CatalogList } from '@/infrastruct/features/CatalogList';
+</script>
 
 <template>
-  <div>catalog</div>
+  <AppContainer>
+    <CatalogList />
+  </AppContainer>
 </template>
-
-<style scoped></style>

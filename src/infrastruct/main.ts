@@ -1,7 +1,7 @@
 import { createApp } from 'vue';
 import './style.css';
 import App from './App.vue';
-import { router } from '@/infrastruct/router';
+import { router } from './shared/router';
 
 const app = createApp(App);
 
