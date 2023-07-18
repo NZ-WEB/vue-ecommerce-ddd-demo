@@ -1,4 +1,4 @@
-import { useProductService } from '@/infrastruct/shared/use/service/product.service.ts';
+import { useProductService } from '@/infrastruct/shared/service/product.service.ts';
 import { CreateProductDTO } from '@/infrastruct/shared/http/dto/product.dto.ts';
 import { useRouter } from 'vue-router';
 import { PRODUCT_PAGE_ROUTE } from '@/infrastruct/constants/routes.ts';

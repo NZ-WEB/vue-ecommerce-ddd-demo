@@ -12,9 +12,11 @@
     "format": "prettier --write ."
   },
   "dependencies": {
+    "@kyvg/vue3-notification": "^2.9.1",
     "@types/node": "^20.4.2",
     "ky": "^0.33.3",
     "ky-universal": "^0.11.0",
+    "pinia": "^2.1.4",
     "vue": "^3.3.4",
     "vue-router": "4"
   },
