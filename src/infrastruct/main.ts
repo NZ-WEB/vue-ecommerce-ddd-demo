@@ -1,7 +1,6 @@
 import { createApp } from 'vue';
-import './style.css';
 import App from './App.vue';
-import { router } from './shared/router';
+import { router } from './shared/instances';
 
 const app = createApp(App);
 

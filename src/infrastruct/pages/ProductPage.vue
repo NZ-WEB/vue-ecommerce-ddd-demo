@@ -1,10 +1,12 @@
 <script setup lang="ts">
 import AppContainer from '@/infrastruct/shared/ui/AppContainer.vue';
-import { CatalogList } from '@/infrastruct/widgets/CatalogList';
+import { ProductInfo } from '@/infrastruct/widgets/product';
 </script>
 
 <template>
   <AppContainer>
-    <CatalogList />
+    <ProductInfo />
   </AppContainer>
 </template>
+
+<style scoped></style>
