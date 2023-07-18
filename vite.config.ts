@@ -11,4 +11,7 @@ export default defineConfig({
       '@': join(__dirname, 'src'),
     },
   },
+  test: {
+    environment: 'happy-dom',
+  },
 });

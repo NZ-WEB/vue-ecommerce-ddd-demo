@@ -1,4 +1,4 @@
-import { useProductService } from '@/infrastruct/shared/use/service/product.service.ts';
+import { useProductService } from '@/infrastruct/shared/service/product.service.ts';
 import { ref } from 'vue';
 import { Product } from '@/domain/models/product.ts';
 
