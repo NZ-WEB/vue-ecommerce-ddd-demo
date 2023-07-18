@@ -15,7 +15,8 @@
     "@types/node": "^20.4.2",
     "ky": "^0.33.3",
     "ky-universal": "^0.11.0",
-    "vue": "^3.3.4"
+    "vue": "^3.3.4",
+    "vue-router": "4"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^6.1.0",
