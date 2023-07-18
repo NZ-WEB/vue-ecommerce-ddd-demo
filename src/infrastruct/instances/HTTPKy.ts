@@ -1,10 +1,10 @@
-import { Http } from "@/domain/repositories/HTTP";
+import { Http } from '@/domain/repositories/HTTP';
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
-import ky, { Options } from "ky-universal";
+import ky, { Options } from 'ky-universal';
 
 const headers = {
-  "Content-Type": "application/json",
+  'Content-Type': 'application/json',
 };
 
 export const httpKy = (options: Options): Http => {
@@ -14,7 +14,7 @@ export const httpKy = (options: Options): Http => {
     get: async <T>(
       path: string,
       params?: Record<string, any>,
-      config?: Options,
+      config?: Options
     ) => {
       return await instance
         .get(path, {

@@ -1,15 +1,15 @@
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
-import {useProductService} from "./infrastruct/use/product.service.ts";
-import {ref} from "vue";
-import {Product} from "./domain/models/product.ts";
+import HelloWorld from './components/HelloWorld.vue';
+import { useProductService } from './infrastruct/use/product.service.ts';
+import { ref } from 'vue';
+import { Product } from './domain/models/product.ts';
 
 const service = useProductService();
 const products = ref<Product[]>([]);
-service.getAll().then(r => {
-  products.value = r;
-})
 
+service.getAll().then((r) => {
+  products.value = r;
+});
 </script>
 
 <template>

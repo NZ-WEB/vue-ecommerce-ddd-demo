@@ -2,7 +2,7 @@ export interface Http {
   get: <T>(
     path: string,
     params?: Record<string, any>,
-    config?: any,
+    config?: any
   ) => Promise<T | any>;
   post: <T, K = any>(path: string, body?: K, config?: any) => Promise<T | any>;
   put: <T, K = any>(path: string, body: K, config?: any) => Promise<T | any>;
