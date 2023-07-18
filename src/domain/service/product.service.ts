@@ -6,6 +6,9 @@ import { Product } from '@/domain/models/product.ts';
 import { NotifierService } from '@/domain/service/notifier.service.ts';
 import { NOTIFICATIONS_TYPES } from '@/domain/providers/notifications.provider.ts';
 
+export const SUCCESS_NOTIFY_MESSAGE_TITLE = 'Post was successfully created';
+export const ERROR_NOTIFY_MESSAGE_TITLE = 'Could not create product';
+
 export const productService = (
   repository: ProductRepository,
   notifier: NotifierService
@@ -21,15 +24,14 @@ export const productService = (
 
       notifier.notify({
         type: NOTIFICATIONS_TYPES.SUCCESS,
-        title: 'Post was successfully created',
+        title: SUCCESS_NOTIFY_MESSAGE_TITLE,
       });
 
       return { ...params, id, rating: { count: 0, rate: 0 } };
     } catch (e) {
       notifier.notify({
         type: NOTIFICATIONS_TYPES.ERROR,
-        title: 'Could not create product',
-        description: 'Try again later',
+        title: ERROR_NOTIFY_MESSAGE_TITLE,
       });
 
       return null;
